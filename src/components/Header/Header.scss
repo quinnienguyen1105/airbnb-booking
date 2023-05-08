@@ -1,0 +1,145 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-color);
+    padding: 20px 0;
+  
+    .title-header {
+      color: var(--color-primary);
+    }
+  
+    .title {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      font-weight: 800;
+      font-size: 32px;
+  
+      svg {
+        color:#b65300;
+        font-size: 40px;
+        margin-right: 10px;
+      }
+    }
+  
+    .header-center {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      max-width: 300px;
+      padding: 7px 5px 7px 7px;
+      height: 40px;
+      border: 2px solid #1c1518;
+      border-radius: 30px;
+      
+      input {
+        border: none;
+        width: 100%;
+        padding: 5px;
+        outline-width: 0;
+        font-weight: 600;
+        background-color: transparent;
+        outline: none;
+      }
+  
+      svg {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+        font-size: 30px;
+        padding: 6px;
+        border-radius: 50%;
+      }
+    }
+  
+    .header-right {
+      display: flex;
+      align-items: center;
+      height: 30px;
+      
+      .become-host {
+        background-color: transparent;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+        padding: 10px;
+        margin-right: 20px;
+      }
+  
+      .login a {
+        margin-right: 20px;
+        font-weight: 700;
+        color: var(--color-primary);
+      }
+  
+      .signup a {
+        margin-right: 20px;
+        font-weight: 700;
+        color: var(--color-primary);
+      }
+  
+      .signup:hover a, .login:hover a {
+        color: var(--color-danger);
+        cursor: pointer;
+      }
+    }
+  
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+      padding: 20px;
+  
+      .title {
+        font-size: 28px;
+  
+        svg {
+          font-size: 36px;
+        }
+      }
+  
+      .header-center {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        max-width: fit-content;
+      }
+  
+      .header-right {
+        margin-top: 20px;
+      }
+    }
+  
+    @media only screen and (max-width: 480px) {
+      .title {
+        font-size: 24px;
+  
+        svg {
+          font-size: 30px;
+        }
+      }
+  
+      .header-center {
+        padding: 7px 5px 7px 7px;
+        height: 35px;
+        border: 2px solid #1c1518;
+        border-radius: 25px;
+  
+        input {
+          font-size: 14px;
+          padding: 3px;
+        }
+  
+        svg {
+          font-size: 24px;
+          padding: 4px;
+        }
+      }
+  
+      .login a, .signup a {
+        margin-right: 10px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+  
+      .become-host {
+        padding: 8px;
+      }
+    }}  

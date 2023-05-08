@@ -1,0 +1,16 @@
+.form {
+    margin: 3rem 0 4rem;
+    .title, .pricePerNight, .address, .city-selector, .image, .typeOfProperty{
+        margin: 1rem 0;
+    }
+    #city, #typeOfProperty{
+        background: var(--color-bg);
+        border: 1px solid var(--color-primary);
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 0.85rem;
+      }
+      .error-message {
+        color: var(--color-danger);
+      }
+}
